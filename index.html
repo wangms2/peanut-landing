@@ -1,119 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>peanut builds</title>
-  <meta name="description" content="Personal projects by Michael Wang. Games, tools, and things I'm building." />
-  <link rel="icon" type="image/png" href="/peanut.png" />
-  <meta property="og:title" content="peanut builds" />
-  <meta property="og:description" content="Personal projects by Michael Wang. Games, tools, and things I'm building." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://peanutbuilds.com" />
-  <meta property="og:image" content="https://peanutbuilds.com/peanut.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="peanut builds" />
-  <meta name="twitter:description" content="Personal projects by Michael Wang." />
-  <meta name="twitter:image" content="https://peanutbuilds.com/peanut.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            cream: '#FAF7F2',
-            charcoal: '#2C2C2C',
-            peanut: {
-              400: '#E5A54B',
-              500: '#D4922A',
-              600: '#B87A1E',
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>peanut builds</title>
+    <meta name="description" content="Personal projects by Michael Wang. Games, tools, and things I'm building." />
+    <link rel="icon" type="image/png" href="/peanut.png" />
+    <meta property="og:title" content="peanut builds" />
+    <meta property="og:description"
+        content="Personal projects by Michael Wang. Games, tools, and things I'm building." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peanutbuilds.com" />
+    <meta property="og:image" content="https://peanutbuilds.com/peanut.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="peanut builds" />
+    <meta name="twitter:description" content="Personal projects by Michael Wang." />
+    <meta name="twitter:image" content="https://peanutbuilds.com/peanut.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF7F2',
+                        charcoal: '#2C2C2C',
+                        peanut: {
+                            400: '#E5A54B',
+                            500: '#D4922A',
+                            600: '#B87A1E',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                },
             },
-          },
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-          },
-        },
-      },
-    }
-  </script>
-  <style>
-    body { background-color: #FAF7F2; }
-    .project-card {
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12);
-      border-color: #D4922A;
-    }
-  </style>
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF7F2;
+        }
+
+        .project-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12);
+            border-color: #D4922A;
+        }
+    </style>
 </head>
+
 <body class="min-h-screen text-charcoal">
 
-  <!-- Hero -->
-  <header class="flex flex-col items-center pt-16 pb-12 px-6">
-    <img
-      src="/peanut.png"
-      alt="Peanut — a smiling peanut mascot"
-      class="w-28 h-28 rounded-full object-cover shadow-md mb-6 border-4 border-white"
-    />
-    <h1 class="text-3xl font-bold tracking-tight mb-2">peanut builds</h1>
-    <p class="text-lg text-charcoal/60">things i'm building</p>
-  </header>
+    <!-- Hero -->
+    <header class="flex flex-col items-center pt-16 pb-12 px-6">
+        <img src="/peanut.png" alt="Peanut — a smiling peanut mascot"
+            class="w-28 h-28 rounded-full object-cover shadow-md mb-6 border-4 border-white" />
+        <h1 class="text-3xl font-bold tracking-tight mb-2">peanut builds</h1>
+        <p class="text-lg text-charcoal/60">things i'm building</p>
+    </header>
 
-  <!-- Projects -->
-  <main class="max-w-3xl mx-auto px-6 pb-16">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+    <!-- Projects -->
+    <main class="max-w-3xl mx-auto px-6 pb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
-      <!-- CardRoute -->
-      <a
-        href="https://cards.peanutbuilds.com"
-        class="project-card block bg-white rounded-xl border border-gray-200 p-6 no-underline text-charcoal"
-      >
-        <div class="text-3xl mb-3">💳</div>
-        <h2 class="text-lg font-semibold mb-1">CardRoute</h2>
-        <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
-          Find the best credit card wallet for your actual spending.
+            <!-- CardRoute -->
+            <a href="https://cards.peanutbuilds.com"
+                class="project-card block bg-white rounded-2xl border border-gray-200 overflow-hidden no-underline text-charcoal">
+                <div class="bg-gradient-to-b from-gray-50 to-white flex items-center justify-center py-5">
+                    <img src="/logos/cardroute.png" alt="CardRoute logo"
+                        class="w-20 h-20 rounded-2xl object-contain shadow-sm" />
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <h2 class="text-lg font-semibold mb-1">CardRoute</h2>
+                    <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
+                        Find the best credit card wallet for your actual spending.
+                    </p>
+                    <span class="text-sm font-medium text-peanut-500">Visit →</span>
+                </div>
+            </a>
+
+            <!-- Sorted! -->
+            <a href="https://sorted.peanutbuilds.com"
+                class="project-card block bg-white rounded-2xl border border-gray-200 overflow-hidden no-underline text-charcoal">
+                <div class="bg-gradient-to-b from-gray-50 to-white flex items-center justify-center py-5">
+                    <img src="/logos/sorted.png" alt="Sorted! logo"
+                        class="w-20 h-20 rounded-2xl object-contain shadow-sm" />
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <h2 class="text-lg font-semibold mb-1">Sorted!</h2>
+                    <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
+                        A party game where you rank things and guess each other's rankings.
+                    </p>
+                    <span class="text-sm font-medium text-peanut-500">Visit →</span>
+                </div>
+            </a>
+
+            <!-- In On It -->
+            <a href="https://inonit.peanutbuilds.com"
+                class="project-card block bg-white rounded-2xl border border-gray-200 overflow-hidden no-underline text-charcoal">
+                <div class="bg-gradient-to-b from-gray-50 to-white flex items-center justify-center py-5">
+                    <img src="/logos/inonit.png" alt="In On It logo"
+                        class="w-20 h-20 rounded-2xl object-contain shadow-sm" />
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <h2 class="text-lg font-semibold mb-1">In On It</h2>
+                    <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
+                        A social deduction party game — one player is an undercover detective.
+                    </p>
+                    <span class="text-sm font-medium text-peanut-500">Visit →</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center pb-12 text-sm text-charcoal/40">
+        <p>
+            built by michael ·
+            <a href="mailto:michael@peanutbuilds.com"
+                class="text-peanut-500 hover:underline">michael@peanutbuilds.com</a>
         </p>
-        <span class="text-sm font-medium text-peanut-500">Visit →</span>
-      </a>
-
-      <!-- Sorted! -->
-      <a
-        href="https://sorted.peanutbuilds.com"
-        class="project-card block bg-white rounded-xl border border-gray-200 p-6 no-underline text-charcoal"
-      >
-        <div class="text-3xl mb-3">🃏</div>
-        <h2 class="text-lg font-semibold mb-1">Sorted!</h2>
-        <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
-          A party game where you rank things and guess each other's rankings.
-        </p>
-        <span class="text-sm font-medium text-peanut-500">Visit →</span>
-      </a>
-
-      <!-- In On It -->
-      <a
-        href="https://inonit.peanutbuilds.com"
-        class="project-card block bg-white rounded-xl border border-gray-200 p-6 no-underline text-charcoal"
-      >
-        <div class="text-3xl mb-3">🕵️</div>
-        <h2 class="text-lg font-semibold mb-1">In On It</h2>
-        <p class="text-sm text-charcoal/60 leading-relaxed mb-4">
-          A social deduction party game — one player is an undercover detective.
-        </p>
-        <span class="text-sm font-medium text-peanut-500">Visit →</span>
-      </a>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-center pb-12 text-sm text-charcoal/40">
-    <p>
-      built by michael ·
-      <a href="mailto:michael@peanutbuilds.com" class="text-peanut-500 hover:underline">michael@peanutbuilds.com</a>
-    </p>
-  </footer>
+    </footer>
 
 </body>
+
 </html>
