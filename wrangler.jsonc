@@ -1,0 +1,9 @@
+// Static-assets deploy of the landing page (no Worker script).
+// .assetsignore keeps repo files out of the upload.
+{
+  "name": "peanut-landing",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+  },
+}
